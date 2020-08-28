@@ -1,0 +1,23 @@
+{
+  "name": "my-car",
+  "version": "1.0.0",
+  "description": "A simple game to tackle a multilayer perceptron neural network. Escape the cops at high speed or let the AI show you.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --production",
+    "watch": "webpack --watch --progress"
+  },
+  "author": "Rogers Correa",
+  "license": "MIT",
+  "dependencies": {
+    "connect": "^3.7.0",
+    "path": "^0.12.7",
+    "serve-static": "^1.14.1"
+  },
+  "devDependencies": {
+    "file-loader": "^6.0.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
