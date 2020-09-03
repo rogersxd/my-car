@@ -14,7 +14,7 @@ class Car {
         this.car.src = '../../assets/img/car.png';
 
         this.car.onload = () => {
-            context.drawImage(this.car, this.x, this.y, 100, 100 * this.car.height / this.car.width);
+            context.drawImage(this.car, this.x, this.y, 80, 80 * this.car.height / this.car.width);
         }
     }
 
@@ -34,7 +34,7 @@ class Car {
                 break;
             case "Right":
             case "ArrowRight":
-                if (this.x >= (this.canvas.width - 130)) {
+                if (this.x >= (this.canvas.width - 110)) {
                     return;
                 }
                 this.x += this.speed;

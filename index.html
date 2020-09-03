@@ -4,6 +4,10 @@
 <head>
        <title>My Car: Machine Learning Game</title>
        <style>
+              body {
+                     background-color: #000000;
+                     margin: 0px;
+              }
               #scene {
                      background-color: transparent;
               }
@@ -11,6 +15,26 @@
                      position: absolute;
                      right: 100px;
                      top: 10px;
+                     color: #ffffff;
+              }
+              .button {
+                     height: 40px;
+                     width: 200px;
+                     font: 600;
+                     font-size: 20px;
+                     float: right;
+                     margin-right: 10px;
+              }
+              #wasted {
+                     position: absolute;
+                     right: 50px;
+                     top: 100px;
+              }
+              .hidden {
+                     display: none;
+              }
+              .menu {
+                     width: 100%;
               }
        </style>
 </head>
@@ -21,6 +45,14 @@
               Seu navegador não suporta o recurso de Canvas. Por favor, tente novamente com um navegador diferente.
        </canvas>
        <h1 class="score-view">SCORE: <span id="score">0</span></h4>
+       
+       <img id="wasted" class="hidden" src="assets/img/wasted.jpg" width="400">
+
+       <div class="menu">
+              <button id="btn-restart" class="button">Restart</button>
+              <button id="btn-ia" class="button">IA Driver</button>
+       </div>
+       
        <script src="./dist/main.js"></script>
 </body>
 
